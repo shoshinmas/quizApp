@@ -1,0 +1,73 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test - Saturacja kolorów | Color saturation survey</title>
+	<style>
+	body {
+background-color: lightblue;
+font-family: Helvetica;
+}
+
+#main {
+width: 80%;
+max-width: 950px;
+border: 1px gray solid;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+#header {
+margin-top: 0;
+border: 2px solid black;
+padding: 5px;
+height: 250px;
+background: green;
+color: white;
+}
+
+label {
+display: block;
+}
+
+input {
+width: 30px;
+margin-left: 20px;
+}
+
+h2 {
+clear: both;
+padding-top: 20px;
+}
+
+button {
+width: 100px;
+margin-top: 20px;
+}
+
+</style>
+</head>
+<body>
+<p> Wybierz język / Choose language</p>
+<p>Polski</a></p>
+ <button id = "button" onclick = "Button_RandomPL()">
+ kliknij tutaj </button>
+<p>English</a></p>
+ <button id = "button" onclick = "Button_RandomEN()">  
+ click here  
+ </button>
+
+<script>
+var arr = ["1", "2", "3", "4", "5", "6"];
+function Button_RandomPL() {
+polish = arr[Math.floor(Math.random() * arr.length)];
+window.location.href="quiz_pl"+polish+".php";
+}
+function Button_RandomEN() {
+english = arr[Math.floor(Math.random() * arr.length)];
+window.location.href="quiz_en"+english+".php";
+}
+</script>
+</body>
+</html>
